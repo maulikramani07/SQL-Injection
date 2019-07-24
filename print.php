@@ -1,9 +1,11 @@
 <?php
 include("connection.php");
 
-$name=$_POST['search'];
+$name=$_POST['user'];
+$password=$_POST['pass'];
 
-$sql = "SELECT name, mobile, password FROM users WHERE name like '%$name%'";
+//$sql = "SELECT name, mobile, password FROM users WHERE name like '%$name%'";
+$sql = "SELECT * FROM users WHERE name=$name AND password=$password";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
