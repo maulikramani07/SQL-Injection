@@ -6,7 +6,8 @@
 <body>
 	<form action="print.php" method="POST">
 	<label>Search : </label>
-	<input type="text" name="search" placeholder="Search Here">
+	<input type="text" name="user" placeholder="user name">
+	<input type="text" name="pass" placeholder="password">
 	<input type="submit" name="submit" value="Submit">
 	</form>
 	<br>
