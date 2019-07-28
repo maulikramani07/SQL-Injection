@@ -15,23 +15,23 @@
   <form action="insert.php" class="was-validated" method="POST">
     <div class="form-group">
       <label for="uname">Name:</label>
-      <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required>
+      <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required pattern="^[a-zA-Z ]*$">
       <div class="valid-feedback">Valid.</div>
-      <div class="invalid-feedback">Please fill out this field.</div>
+      <div class="invalid-feedback">Invalid</div>
     </div>
 
     <div class="form-group">
       <label for="uname">Mobile:</label>
-      <input type="number" class="form-control" id="mobile" placeholder="Enter mobile" name="mobile" required >
+      <input type="text" class="form-control" id="mobile" placeholder="Enter mobile" name="mobile" required pattern="[0-9]{10}">
       <div class="valid-feedback">Valid.</div>
-      <div class="invalid-feedback">Please fill out this field.</div>
+      <div class="invalid-feedback">Invalid</div>
     </div>
 
     <div class="form-group">
       <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" required>
+      <input type="password" class="form-control" id="password" placeholder="Enter password With 8 Or More Characters" name="password" required pattern="[0-9a-zA-z@!&*$#-+=]{8,}">
       <div class="valid-feedback">Valid.</div>
-      <div class="invalid-feedback">Please fill out this field.</div>
+      <div class="invalid-feedback">Invalid</div>
     </div>
     <div class="form-group form-check">
       <label class="form-check-label">
